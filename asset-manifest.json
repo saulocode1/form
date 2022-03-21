@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/sauloveigr/tech.git/static/js/main.5176e19b.js",
+    "static/js/787.9718534a.chunk.js": "/sauloveigr/tech.git/static/js/787.9718534a.chunk.js",
+    "static/media/vector-wallpaper.jpg": "/sauloveigr/tech.git/static/media/vector-wallpaper.d90dfe33fa945b325298.jpg",
+    "static/media/Laptop.svg": "/sauloveigr/tech.git/static/media/Laptop.840b25f3ebf5ca3d61076295bdcef7e8.svg",
+    "static/media/programming.svg": "/sauloveigr/tech.git/static/media/programming.e7fd0478451b8d72ff9b93b1ea475b66.svg",
+    "index.html": "/sauloveigr/tech.git/index.html",
+    "main.5176e19b.js.map": "/sauloveigr/tech.git/static/js/main.5176e19b.js.map",
+    "787.9718534a.chunk.js.map": "/sauloveigr/tech.git/static/js/787.9718534a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5176e19b.js"
+  ]
+}
