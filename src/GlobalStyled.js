@@ -14,7 +14,7 @@ const GlobalStyled = createGlobalStyle`
    }
 
    :root {
-      --form-color: #282a37;
+      --form-color: #fff;
       --background-color: #262626;
 
       --gradient-1: hsla(232, 16%, 19%, 0.65);
