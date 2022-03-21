@@ -1,8 +1,18 @@
-<div align="center"><h1>Desktop Preview</h1></div>
+<div align="center"><h1>Preview</h1></div>
 
 <img src="/src/assets/images/peview-desktop.png" alt="preview-image"/>
 
-<div align="center"><h1>Mobile Preview</h1></div>
+<div align="center"> <img src="/src/assets/images/peview-mobile.png" alt="preview-image"/>
+ </div>
 
-<img   align="center" src="/src/assets/images/peview-mobile.png" alt="preview-image"/>
+🚀 Technologies
+This project was made using the following technologies:
+
+React JS
+JavaScript
+Material UI
+Formik
+React Query
+styled-components
+Yup
 
