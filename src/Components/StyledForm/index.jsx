@@ -4,13 +4,10 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 
 const validationSchema = yup.object({
-   firstName: yup.string().required("First name is required"),
-   email: yup
-      .string()
-      .email("Enter a valid email")
-      .required("Email is required"),
-   password: yup.string().required("Passowrd is required"),
-});
+   firstName: yup.string().required("First name is required."),
+   email: yup.string().email("Enter a valid email.").required("Email is required."),
+   password: yup.string().required("Password is required."),
+})
 
 const MainForm = () => {
    const formik = useFormik({
@@ -22,13 +19,12 @@ const MainForm = () => {
       onSubmit: (values) => {
          console.log(JSON.stringify(values));
       },
-      validationSchema: validationSchema,
+      validationSchema: validationSchema
    });
    return (
       <>
          <form onSubmit={formik.handleSubmit}>
             <TextField
-               fullWidth
                name="firstName"
                type="firstName"
                variant="outlined"
@@ -36,14 +32,12 @@ const MainForm = () => {
                label="Name"
                value={formik.values.firstName}
                onChange={formik.handleChange}
-               error={
-                  formik.touched.firstName && Boolean(formik.errors.firstName)
-               }
+               error={formik.touched.firstName && Boolean(formik.errors.firstName)} 
                helperText={formik.touched.firstName && formik.errors.firstName}
+               fullWidth
             />
             <Box height={14} />
             <TextField
-               fullWidth
                name="email"
                type="email"
                variant="outlined"
@@ -51,10 +45,12 @@ const MainForm = () => {
                label="Email Address"
                value={formik.values.email}
                onChange={formik.handleChange}
+               error={formik.touched.email && Boolean(formik.errors.email)} 
+               helperText={formik.touched.email && formik.errors.email}
+               fullWidth
             />
             <Box height={14} />
             <TextField
-               fullWidth
                name="password"
                type="password"
                variant="outlined"
@@ -62,6 +58,9 @@ const MainForm = () => {
                label="Password"
                value={formik.values.password}
                onChange={formik.handleChange}
+               error={formik.touched.password && Boolean(formik.errors.password)} 
+               helperText={formik.touched.password && formik.errors.password}
+               fullWidth
             />
             <Box height={16} />
             <Button type="submit" variant="contained" color="primary" fullWidth>
