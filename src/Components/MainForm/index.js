@@ -1,13 +1,16 @@
-import styled from "styled-components";
+import { React } from "react";
 import { Button, Box, TextField } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
 const validationSchema = yup.object({
    firstName: yup.string().required("First name is required."),
-   email: yup.string().email("Enter a valid email.").required("Email is required."),
+   email: yup
+      .string()
+      .email("Enter a valid email.")
+      .required("Email is required."),
    password: yup.string().required("Password is required."),
-})
+});
 
 const MainForm = () => {
    const formik = useFormik({
@@ -19,8 +22,9 @@ const MainForm = () => {
       onSubmit: (values) => {
          console.log(JSON.stringify(values));
       },
-      validationSchema: validationSchema
+      validationSchema: validationSchema,
    });
+
    return (
       <>
          <form onSubmit={formik.handleSubmit}>
@@ -32,7 +36,9 @@ const MainForm = () => {
                label="Name"
                value={formik.values.firstName}
                onChange={formik.handleChange}
-               error={formik.touched.firstName && Boolean(formik.errors.firstName)} 
+               error={
+                  formik.touched.firstName && Boolean(formik.errors.firstName)
+               }
                helperText={formik.touched.firstName && formik.errors.firstName}
                fullWidth
             />
@@ -45,7 +51,7 @@ const MainForm = () => {
                label="Email Address"
                value={formik.values.email}
                onChange={formik.handleChange}
-               error={formik.touched.email && Boolean(formik.errors.email)} 
+               error={formik.touched.email && Boolean(formik.errors.email)}
                helperText={formik.touched.email && formik.errors.email}
                fullWidth
             />
@@ -58,7 +64,9 @@ const MainForm = () => {
                label="Password"
                value={formik.values.password}
                onChange={formik.handleChange}
-               error={formik.touched.password && Boolean(formik.errors.password)} 
+               error={
+                  formik.touched.password && Boolean(formik.errors.password)
+               }
                helperText={formik.touched.password && formik.errors.password}
                fullWidth
             />
@@ -72,8 +80,3 @@ const MainForm = () => {
 };
 
 export default MainForm;
-
-export const StyledForm = styled.div`
-   display: flex;
-   flex-direction: column;
-`;

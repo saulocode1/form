@@ -2,9 +2,9 @@ import styled from "styled-components";
 import Background from "../../assets/images/background.avif";
 
 const FormContainer = styled.section`
-   padding: 6.25rem;
-   height: 30rem;
-   width: 40rem;
+   padding: 2rem;
+   height: 800px;
+   width: 1200px;
    border-radius: 3.125rem;
    margin-inline: auto;
    /* background: url(${Background}) no-repeat; */
