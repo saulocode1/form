@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const LinksWrapper = styled.div`
-   padding: 2.5rem 1.25rem;
+   padding: 40px 20px;
    position: relative;
    height: 100%;
    width: 28.125rem;
 
-   @media (min-width: 1000px) {
+   @media (max-width: 1100px) {
       display: none;
    }
 `;
@@ -25,17 +25,17 @@ export const Taghos = styled.h1`
    font-size: 1.875rem;
    color: var(--text-color);
    user-select: none;
-   background: -webkit-linear-gradient(90deg, var(--gradient-3) 50%, var(--gradient-4) 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+   background: -webkit-linear-gradient(
+      90deg,
+      var(--gradient-3) 50%,
+      var(--gradient-4) 90%
+   );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 `;
 
-export const SocialWrapper = styled.div`
+export const SocialWrapper = styled.div``;
 
-`;
-
-export const Header = styled.header`
-
-`;
+export const Header = styled.header``;
 
 export default UrlLink;
