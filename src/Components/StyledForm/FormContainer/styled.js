@@ -5,7 +5,6 @@ const FormContainer = styled.section`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   /* padding-left: 2.5rem; */
    height: 770px;
    width: 1000px;
    border-radius: 1rem;

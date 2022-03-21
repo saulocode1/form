@@ -1,9 +1,9 @@
 import { React } from "react";
-import { Button, Box, TextField } from "@material-ui/core";
+import { Box, TextField } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
-import StyledButton from "../Button";
+import { StyledButton } from "../StyledForm/FormButton";
 
 const validationSchema = yup.object({
    firstName: yup.string().required("First name is required."),
