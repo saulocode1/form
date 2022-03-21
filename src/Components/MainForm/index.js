@@ -15,7 +15,6 @@ const validationSchema = yup.object({
 });
 
 const MainForm = () => {
-
    const formik = useFormik({
       initialValues: {
          firstName: "",

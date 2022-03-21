@@ -1,5 +1,6 @@
 import React from "react";
-import UrlLink, { LinksWrapper, Taghos } from "./styled";
+import UrlLink, { LinksWrapper } from "./styled";
+import Header from "./Header/index";
 
 const LinksContainer = () => (
    <LinksWrapper>

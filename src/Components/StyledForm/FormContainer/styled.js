@@ -13,8 +13,8 @@ const FormContainer = styled.section`
    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 30px,
       rgba(0, 0, 0, 0.3) 10px 10px 30px;
    background: url(${Background});
-   background-size: 75rem;
-   background-position-x: 21rem;
+   background-size: 73rem;
+   background-position-x: 21.6rem;
 
    @media (max-width: 1100px) {
       width: 80vw;

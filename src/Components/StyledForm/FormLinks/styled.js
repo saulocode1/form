@@ -23,19 +23,15 @@ const UrlLink = styled.a`
 
 export const Taghos = styled.h1`
    font-size: 1.875rem;
-   color: var(--text-color);
+   color: var(--gradient-3);
    user-select: none;
-   background: -webkit-linear-gradient(
-      90deg,
-      var(--gradient-3) 50%,
-      var(--gradient-4) 90%
-   );
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
 `;
 
-export const SocialWrapper = styled.div``;
-
-export const Header = styled.header``;
+export const SocialWrapper = styled.div`
+   width: auto;
+   gap: 1rem;
+   display: flex;
+   justify-content: space-between;
+`;
 
 export default UrlLink;
