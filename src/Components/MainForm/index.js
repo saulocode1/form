@@ -3,6 +3,8 @@ import { Button, Box, TextField } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
+import StyledButton from "../Button";
+
 const validationSchema = yup.object({
    firstName: yup.string().required("First name is required."),
    email: yup
@@ -70,10 +72,8 @@ const MainForm = () => {
                helperText={formik.touched.password && formik.errors.password}
                fullWidth
             />
-            <Box height={16} />
-            <Button type="submit" variant="contained" color="primary" fullWidth>
-               Sign up
-            </Button>
+            <Box height={30} />
+            <StyledButton />
          </form>
       </>
    );

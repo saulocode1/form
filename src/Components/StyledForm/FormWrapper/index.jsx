@@ -1,15 +1,46 @@
+import { Box, createTheme, ThemeProvider, Typography } from "@material-ui/core";
 import React from "react";
 import MainForm from "../../MainForm";
-import FormTitle, { FormSubtitle } from "../FormText/styled";
 import StyledFormWrapper from "./styled";
+
+const theme = createTheme({
+   palette: {
+      primary: {
+         main: "#4f4f4f",
+         contrastText: "#fff",
+      },
+   },
+   typography: {
+      h1: {
+         fontFamily: "Poppins",
+         textTransform: "none",
+         fontSize: "2.8125rem",
+         fontWeight: 600,
+      },
+      h2: {
+         fontFamily: "Poppins",
+         textTransform: "none",
+         fontSize: "1.5625rem",
+         fontWeight: 400,
+      },
+   },
+});
 
 const FormWrapper = () => (
    <>
-      <StyledFormWrapper>
-         <FormTitle>Welcome Back</FormTitle>
-         <FormSubtitle>Start the Adventure</FormSubtitle>
-         <MainForm />
-      </StyledFormWrapper>
+      <ThemeProvider theme={theme}>
+         <StyledFormWrapper>
+            <Typography variant="h1" fontFamily="Poppins" color="primary">
+               Welcome Back
+            </Typography>
+            <Box height={10} />
+            <Typography variant="h2" fontFamily="Poppins" color="primary">
+               Start the Adventure
+            </Typography>
+            <Box height={40} />
+            <MainForm />
+         </StyledFormWrapper>
+      </ThemeProvider>
    </>
 );
 

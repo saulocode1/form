@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import Background from "../../../assets/images/vector-wallpaper.jpg"
-
+import Background from "../../../assets/images/vector-wallpaper.jpg";
 
 const FormContainer = styled.section`
    display: flex;
@@ -14,8 +13,8 @@ const FormContainer = styled.section`
    background-color: var(--form-color);
    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 30px,
       rgba(0, 0, 0, 0.3) 10px 10px 30px;
-   background: url(${Background}) 10% ;
-
+   background: url(${Background});
+   background-size: 1200px;
 `;
 
 export default FormContainer;

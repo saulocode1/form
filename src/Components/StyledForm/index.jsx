@@ -8,8 +8,8 @@ const StyledForm = () => (
    <>
       <SectionForm>
          <FormContainer>
-            <FormWrapper></FormWrapper>
-            <FormImage></FormImage>
+            <FormWrapper/>
+            <FormImage/>
          </FormContainer>
       </SectionForm>
    </>
