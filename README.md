@@ -1,14 +1,8 @@
-<div align="center"><h1>Preview</h1></div>
+<div align="center"><h1>Desktop Preview</h1></div>
 
-<img src="src/assets/images/preview-desktop.png" alt="preview-image"/>
+<img src="/src/assets/images/peview-desktop.png" alt="preview-image"/>
 
-## 🚀  Technologies
+<div align="center"><h1>Mobile Preview</h1></div>
 
-This project was made using the following technologies:
+<img   align="center" src="/src/assets/images/peview-mobile.png" alt="preview-image"/>
 
--   React JS
--   JavaScript
-
-Libraries
-
--   styled-components
