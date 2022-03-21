@@ -1,6 +1,6 @@
 import React from "react";
 import FormContainer from "./FormContainer/styled";
-import FormImage from "./FormImage/styled";
+import LinksContainer from "./FormLinks";
 import FormWrapper from "./FormWrapper";
 import SectionForm from "./SectionForm/styled";
 
@@ -8,8 +8,8 @@ const StyledForm = () => (
    <>
       <SectionForm>
          <FormContainer>
-            <FormWrapper/>
-            <FormImage/>
+            <FormWrapper />
+            <LinksContainer />
          </FormContainer>
       </SectionForm>
    </>

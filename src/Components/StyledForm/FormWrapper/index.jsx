@@ -3,6 +3,7 @@ import React from "react";
 import MainForm from "../../MainForm";
 import StyledFormWrapper from "./styled";
 import theme from "../../../MuiTheme";
+import { ImageWrapper, Programming } from "../FormImage/styled";
 
 const FormWrapper = () => (
    <>
@@ -17,6 +18,9 @@ const FormWrapper = () => (
             </Typography>
             <Box height={40} />
             <MainForm />
+            <ImageWrapper>
+               <Programming />
+            </ImageWrapper>
          </StyledFormWrapper>
       </ThemeProvider>
    </>

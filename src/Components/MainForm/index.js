@@ -15,6 +15,7 @@ const validationSchema = yup.object({
 });
 
 const MainForm = () => {
+
    const formik = useFormik({
       initialValues: {
          firstName: "",
@@ -22,7 +23,7 @@ const MainForm = () => {
          password: "",
       },
       onSubmit: (values) => {
-         console.log(JSON.stringify(values));
+         setTimeout(() => {console.log(JSON.stringify(values))}, 5000);
       },
       validationSchema: validationSchema,
    });

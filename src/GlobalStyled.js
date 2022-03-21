@@ -9,7 +9,7 @@ const GlobalStyled = createGlobalStyle`
    }
 
    body {
-      background: linear-gradient(135deg, #1D2671, #C33764);
+      background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
       width: 100vw;
       height: 100vh;
    }
@@ -18,8 +18,12 @@ const GlobalStyled = createGlobalStyle`
       --form-color: #fff;
       --background-color: #262626;
 
-      --gradient-1: hsla(232, 16%, 19%, 0.65);
-      --gradient-2: hsla(222, 10%, 34%, 0.65);
+      --text-color: #fff;
+
+      --gradient-1: #1D2671;
+      --gradient-2: #C33764;
+      --gradient-3: #FE6B8B;
+      --gradient-4: #FF8E53;
    }
 `;
 

@@ -14,7 +14,7 @@ const MyButton = styled(Button)({
    display: "block",
    fontSize: "15px",
    fontWeight: "600",
-   borderRadius: "10px"
+   borderRadius: "10px",
 });
 
 export const StyledButton = () => {
@@ -23,4 +23,4 @@ export const StyledButton = () => {
          Sign Up
       </MyButton>
    );
-}
+};

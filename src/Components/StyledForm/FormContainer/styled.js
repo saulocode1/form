@@ -5,15 +5,21 @@ const FormContainer = styled.section`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 770px;
-   width: 1000px;
+   height: 48.125rem;
+   width: 62.5rem;
    border-radius: 1rem;
    margin-inline: auto;
    background-color: var(--form-color);
    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 30px,
       rgba(0, 0, 0, 0.3) 10px 10px 30px;
    background: url(${Background});
-   background-size: 1200px;
+   background-size: 75rem;
+   background-position-x: 21rem;
+
+   @media (max-width: 1100px) {
+      width: 80vw;
+      background-image: none;
+   }
 `;
 
 export default FormContainer;

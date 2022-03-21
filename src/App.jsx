@@ -4,7 +4,7 @@ import StyledForm from "./Components/StyledForm";
 const App = () => (
    <>
       <GlobalStyled />
-      <StyledForm/>
+      <StyledForm />
    </>
 );
 

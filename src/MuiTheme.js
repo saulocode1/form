@@ -11,13 +11,13 @@ const theme = createTheme({
       h1: {
          fontFamily: "Poppins",
          textTransform: "none",
-         fontSize: "2.8125rem",
+         fontSize: "2.6rem",
          fontWeight: 600,
       },
       h2: {
          fontFamily: "Poppins",
          textTransform: "none",
-         fontSize: "1.5625rem",
+         fontSize: "1.5rem",
          fontWeight: 400,
       },
    },
