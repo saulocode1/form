@@ -1,10 +1,16 @@
 import GlobalStyled from "./GlobalStyled";
 import StyledForm from "./Components/StyledForm";
 
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
+
 const App = () => (
    <>
-      <GlobalStyled />
-      <StyledForm />
+      <QueryClientProvider client={queryClient}>
+         <GlobalStyled />
+         <StyledForm />
+      </QueryClientProvider>
    </>
 );
 

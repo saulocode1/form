@@ -17,10 +17,10 @@ const MyButton = styled(Button)({
    borderRadius: "10px",
 });
 
-export const StyledButton = () => {
+export const StyledButton = ({ isLoading, isSuccess, isDefault }) => {
    return (
       <MyButton type="submit" variant="contained" color="primary" size="large">
-         Sign Up
+         {isLoading ? "Loading..." : "Sign Up"}
       </MyButton>
    );
 };

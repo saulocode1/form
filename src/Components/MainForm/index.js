@@ -2,6 +2,7 @@ import { React } from "react";
 import { Box, TextField } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import { useMutation } from "react-query";
 
 import { StyledButton } from "../StyledForm/FormButton";
 
@@ -15,6 +16,25 @@ const validationSchema = yup.object({
 });
 
 const MainForm = () => {
+   const { mutate, isLoading, isSuccess } = useMutation(
+      "postUser",
+      async (values) => {
+         return new Promise((resolve, _) => {
+            setTimeout(() => {
+               console.log(JSON.stringify(values));
+               resolve();
+            }, 2000);
+         });
+      },
+      {
+         onSuccess: () => {
+            document.querySelector("button").textContent = "Success!";
+         },
+      }
+   );
+
+   console.log(isLoading);
+
    const formik = useFormik({
       initialValues: {
          firstName: "",
@@ -22,7 +42,7 @@ const MainForm = () => {
          password: "",
       },
       onSubmit: (values) => {
-         setTimeout(() => {console.log(JSON.stringify(values))}, 5000);
+         mutate(values);
       },
       validationSchema: validationSchema,
    });
@@ -73,7 +93,10 @@ const MainForm = () => {
                fullWidth
             />
             <Box height={30} />
-            <StyledButton />
+            <StyledButton
+               isLoading={isLoading}
+               isSuccess={isSuccess}
+            />
          </form>
       </>
    );
