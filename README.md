@@ -5,14 +5,16 @@
 <div align="center"> <img src="/src/assets/images/peview-mobile.png" alt="preview-image"/>
  </div>
 
-🚀 Technologies
+## 🚀  Technologies
+
 This project was made using the following technologies:
 
-React JS
-JavaScript
-Material UI
-Formik
-React Query
-styled-components
-Yup
+-   React JS
+- Material UI
+- Formik
+- React Query
+- styled-components
+- Yup
+
+
 
