@@ -15,12 +15,19 @@ const MyButton = styled(Button)({
    fontSize: "15px",
    fontWeight: "600",
    borderRadius: "10px",
-   transition: "80ms ease",
+   transition: "all 0.3s",
+   position: 'fixed'
 });
 
 export const StyledButton = ({ isLoading }) => {
    return (
-      <MyButton className="button" type="submit" variant="contained" color="primary" size="large">
+      <MyButton
+         className="button"
+         type="submit"
+         variant="contained"
+         color="primary"
+         size="large"
+      >
          {isLoading ? "Loading..." : "Sign Up"}
       </MyButton>
    );

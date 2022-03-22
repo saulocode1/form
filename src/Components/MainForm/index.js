@@ -5,6 +5,8 @@ import * as yup from "yup";
 import { useMutation } from "react-query";
 
 import { StyledButton } from "../StyledForm/FormButton";
+import { StyledButtonWrapper } from "../StyledForm/FormButton/RefreshButton/styled";
+import RefreshButton from "../StyledForm/FormButton/RefreshButton";
 
 const validationSchema = yup.object({
    firstName: yup.string().required("First name is required."),
@@ -29,6 +31,9 @@ const MainForm = () => {
 
       {
          onSuccess: () => {
+            document.querySelector("#teste").style.opacity = "1";
+            document.querySelector("#teste").style.visibility = "visible";
+            document.querySelector("#teste").style.WebkitTransition = "all 1s;";
             document.querySelector("button").textContent = "Success!";
             document.querySelector("button").style.background =
                "linear-gradient(45deg, #11998e, #38ef7d)";
@@ -98,7 +103,10 @@ const MainForm = () => {
                fullWidth
             />
             <Box height={30} />
-            <StyledButton isLoading={isLoading} isSuccess={isSuccess} />
+            <StyledButtonWrapper>
+               <StyledButton isLoading={isLoading} isSuccess={isSuccess} />
+               <RefreshButton />
+            </StyledButtonWrapper>
          </form>
       </>
    );
