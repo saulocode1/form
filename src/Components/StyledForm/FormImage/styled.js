@@ -21,10 +21,6 @@ export const Programming = styled.img.attrs({ src: ProgrammingPic })`
    width: 18.75rem;
    position: absolute;
    bottom: 0.625rem;
-
-   @media (max-width: 600px) {
-      width: 18rem;
-   }
 `;
 
 export const ImageWrapper = styled.div`
