@@ -23,7 +23,7 @@ export const Programming = styled.img.attrs({ src: ProgrammingPic })`
    bottom: 0.625rem;
 
    @media (max-width: 600px) {
-      width: 15rem;
+      width: 18rem;
    }
 `;
 
