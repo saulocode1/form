@@ -26,9 +26,13 @@ const MainForm = () => {
             }, 2000);
          });
       },
+
       {
          onSuccess: () => {
             document.querySelector("button").textContent = "Success!";
+            document.querySelector("button").style.background = "#32DB61";
+            document.querySelector("button").style.boxShadow =
+               "0 3px 5px 2px rgba(0, 0, 0, 0.1)";
          },
       }
    );
@@ -93,10 +97,7 @@ const MainForm = () => {
                fullWidth
             />
             <Box height={30} />
-            <StyledButton
-               isLoading={isLoading}
-               isSuccess={isSuccess}
-            />
+            <StyledButton isLoading={isLoading} isSuccess={isSuccess} />
          </form>
       </>
    );

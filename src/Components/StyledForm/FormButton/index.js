@@ -17,7 +17,7 @@ const MyButton = styled(Button)({
    borderRadius: "10px",
 });
 
-export const StyledButton = ({ isLoading, isSuccess, isDefault }) => {
+export const StyledButton = ({ isLoading }) => {
    return (
       <MyButton type="submit" variant="contained" color="primary" size="large">
          {isLoading ? "Loading..." : "Sign Up"}
