@@ -26,7 +26,6 @@ export const Programming = styled.img.attrs({ src: ProgrammingPic })`
       width: 15rem;
    }
 
-   
    @media (max-width: 375px) {
       width: 13rem;
    }

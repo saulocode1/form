@@ -43,7 +43,7 @@ const MainForm = () => {
             document.querySelector("button").style.background =
                "linear-gradient(45deg, #11998e, #38ef7d)";
             document.querySelector("button").style.boxShadow =
-               "0 3px 5px 2px rgba(0, 0, 0, 0.1)";
+               "0 3px 5px 2px rgba(0, 0, 0, .15)";
          },
       }
    );
