@@ -1,12 +1,15 @@
 import React from "react";
 import { StyledRefreshButton, RefreshButtonLink } from "./styled";
 
-const RefreshButton = () => (
-   <>
-      <RefreshButtonLink id="teste"  >
-         <StyledRefreshButton />
-      </RefreshButtonLink>
-   </>
-);
+const RefreshButton = () => {
+
+   return (
+      <>
+         <RefreshButtonLink id="arrowButton">
+            <StyledRefreshButton />
+         </RefreshButtonLink>
+      </>
+   );
+};
 
 export default RefreshButton;

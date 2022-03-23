@@ -16,7 +16,8 @@ const MyButton = styled(Button)({
    fontWeight: "600",
    borderRadius: "10px",
    transition: "all 0.3s",
-   position: 'fixed'
+   // marginInline: "auto;"
+   // position: 'fixed'
 });
 
 export const StyledButton = ({ isLoading }) => {

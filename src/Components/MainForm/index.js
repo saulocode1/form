@@ -17,6 +17,10 @@ const validationSchema = yup.object({
    password: yup.string().required("Password is required."),
 });
 
+const resetForm = () => {
+   document.getElementById("#firstName").value = "";
+};
+
 const MainForm = () => {
    const { mutate, isLoading, isSuccess } = useMutation(
       "postUser",
@@ -31,9 +35,10 @@ const MainForm = () => {
 
       {
          onSuccess: () => {
-            document.querySelector("#teste").style.opacity = "1";
-            document.querySelector("#teste").style.visibility = "visible";
-            document.querySelector("#teste").style.WebkitTransition = "all 1s;";
+            document.querySelector("#arrowButton").style.opacity = "1";
+            document.querySelector("#arrowButton").style.visibility = "visible";
+            document.querySelector("#arrowButton").style.WebkitTransition =
+               "all 1s;";
             document.querySelector("button").textContent = "Success!";
             document.querySelector("button").style.background =
                "linear-gradient(45deg, #11998e, #38ef7d)";
@@ -61,6 +66,7 @@ const MainForm = () => {
       <>
          <form onSubmit={formik.handleSubmit}>
             <TextField
+               id="firstName"
                name="firstName"
                type="firstName"
                variant="outlined"
@@ -105,7 +111,11 @@ const MainForm = () => {
             <Box height={30} />
             <StyledButtonWrapper>
                <StyledButton isLoading={isLoading} isSuccess={isSuccess} />
-               <RefreshButton />
+               <RefreshButton
+                  onClick={() =>
+                     (document.getElementById("#firstName").value = "")
+                  }
+               />
             </StyledButtonWrapper>
          </form>
       </>
