@@ -20,6 +20,10 @@ const FormContainer = styled.section`
       width: 80vw;
       background-image: none;
    }
+
+   @media (max-height: 768px) {
+      height: 70vh;
+   }
 `;
 
 export default FormContainer;

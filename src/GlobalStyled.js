@@ -12,6 +12,10 @@ const GlobalStyled = createGlobalStyle`
       background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
       width: 100vw;
       height: 100vh;
+
+      @media (max-height: 768px) {
+      overflow: none;
+   }
    }
 
    :root {
