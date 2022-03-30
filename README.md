@@ -15,6 +15,6 @@ This project was made using the following technologies:
 - React Query
 - styled-components
 - Yup
-- Gh-pages
+- gh-pages
 
 
